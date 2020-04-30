@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #header {
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1140px;
+            height: 117px;
+            margin: auto;
+        }
+
+        .logo {
+            width: 80px;
+            padding: 20px 0;
+        }
+
+        .logo img {
+            width: 100%;
+        }
+
+        #banner {
+            width: 100%;
+            height: calc(100% - 234px);
+            background-image: url(img/banner.jpg);
+        }
+
+        #bottombar {
+            width: 100%;
+            height: 117px;
+        }
+
+        #bottombar ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            width: 1140px;
+            height: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .anchor {
+            display: block;
+            text-decoration: none;
+            color: #FEFEFE;
+            font-size: 20px;
+            padding: 15px 30px;
+            font-family: "微軟正黑體";
+        }
+
+        #page1 {
+            display: flex;
+            margin: 0;
+            width: 100%;
+        }
+
+        #page1 .block {
+            height: 100vh;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #page1 #L {
+            background-image: url(img/page1_L.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        #page1 #R {
+            background-image: url(img/page1_R.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .p1_container {
+            width: 100%;
+            height: 40%;
+            margin: auto;
+            display: contents;
+        }
+
+        .text {
+            width: 350px;
+            text-align: justify;
+            letter-spacing: 3px;
+            line-height: 1.5;
+            color: #FEFEFE;
+            font-family: "微軟正黑體";
+            text-shadow: 1px 1px 0 black, -1px -1px 0 black;
+        }
+
+        #page1 .text {
+            background-color: rgb(27, 27, 27);
+            padding: 10px;
+            border-radius: 30px;
+            opacity: 0.8;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0;
+        }
+
+        #page1 p {
+            color: rgb(222, 232, 246);
+        }
+
+        #page2 .page2_bgImg {
+            width: 100%;
+            height: 1000px;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        #page3 {
+            background-color: black;
+        }
+
+        #page3 .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            height: unset;
+            padding-top: 300px;
+        }
+
+        .p3_image_width {
+            width: 380px;
+            height: 285px;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #page3 .blockL {
+            background-image: url(img/mazda_3.jpg);
+        }
+
+        #page3 .blockC {
+            background-image: url(img/mazda_CX9.jpg);
+        }
+
+        #page3 .blockR {
+            background-image: url(img/mazda_MX5.jpg);
+        }
+
+        #page3 .text {
+            width: 380px;
+            text-align: justify;
+            letter-spacing: 3px;
+            line-height: 1.5;
+            color: #FEFEFE;
+            font-family: "微軟正黑體";
+            text-shadow: 1px 1px 0 black, -1px -1px 0 black;
+        }
+
+        #page3 h1 {
+            margin-top: 40px;
+        }
+
+        #page3 P {
+            text-align: center;
+            margin: 0;
+            color: brown;
+        }
+
+        #page4 {
+            background-color: black;
+        }
+
+        #page4 .container {
+            width: 100%;
+            max-width: 1140px;
+            margin: auto;
+            display: flex;
+            height: calc(100% - 700px);
+            justify-content: center;
+            padding: 350px 0;
+
+        }
+
+        #page4 .img {
+            background-image: url(img/page4.jpg);
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #page4 h1 {
+            font-size: 35px;
+            text-align: center;
+        }
+
+        #page4 h2 {
+            font-size: 16px;
+            color: #9E0001;
+            text-align: center;
+        }
+
+        #page4 P {
+            color: #788FAF;
+            margin-left: 40px;
+        }
+
+
+        #page4 .text {
+            width: 380px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="./img/logo.png">
+                </div>
+            </div>
+        </div>
+        <div id="banner"></div>
+        <div id="bottombar">
+            <div class="container">
+                <ul>
+                    <li><a href="" class="anchor">MAZDA精神</a></li>
+                    <li><a href="" class="anchor">宣傳影片</a></li>
+                    <li><a href="" class="anchor">推薦車種</a></li>
+                    <li><a href="" class="anchor">預約試乘</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="page1">
+        <div id="L" class="block">
+            <div class="p1_container">
+                <div class="text">
+                    <h1>企業願景</h1>
+                    <p>我們對汽車抱持無比熱愛。</p>
+                    <p>希望透過汽車，與大家一起過著精采豐富的人生。即使面對未來，我們也期待汽車與地球及社會共從，不管面臨什麼樣的挑戰，都可以利用獨創的想法與構思，持續不斷挑戰。</p>
+                </div>
+            </div>
+        </div>
+        <div id="R" class="block">
+            <div class="p1_container">
+                <div class="text">
+                    <h1>MAZDA精神</h1>
+                    <p>為了讓事情更好，我們顛覆傳統，我們是一家與眾不同的汽車公司。</p>
+                    <p>當有人告訴我們必須遵循傳統，我們就會將它視為是必須被挑戰的規則-這就是 MAZDA 的精神。</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="page2">
+        <div class="page2_bgImg" style="background-image: url(https://j.gifs.com/BNm9Xk.gif)"></div>
+    </div>
+    <div id="page3">
+        <div class="container">
+            <div id="col">
+                <div class="blockL p3_image_width"></div>
+                <div class="text">
+                    <h1>MAZDA 3</h1>
+                    <p>$799,000起</p>
+                </div>
+            </div>
+            <div id="col">
+                <div class="blockC p3_image_width"></div>
+                <div class="text">
+                    <h1>MAZDA CX-9</h1>
+                    <p>$1,739,000起</p>
+                </div>
+            </div>
+            <div id="col">
+                <div class="blockR p3_image_width"></div>
+                <div class="text">
+                    <h1>MAZDA MX-5</h1>
+                    <p>$1,340,000起</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="page4">
+        <div class="container">
+            <div class="img"></div>
+            <div class="text">
+                <h1>立即預約試乘</h1>
+                <h2>親身體驗專屬你的獨特</h2>
+                <p>營業時間：09:00~19:30</p>
+                <p>聯絡電話：(04) 25324171</p>
+                <p>地址：(420) 台中市豐原區中山路92號</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
